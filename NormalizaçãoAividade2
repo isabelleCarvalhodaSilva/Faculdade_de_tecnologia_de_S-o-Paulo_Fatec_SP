@@ -1,0 +1,11 @@
+PROFISSIONAL(cpf PK,nome)
+
+TELEFONE(numero PK,cpf FK)
+
+GENERO(codigo PK,nome,descricao)
+
+PRODUCAO(codigo PK,titulo,ano_lancamento,orcamento,codigo_genero FK)
+
+FUNCAO(codigo PK,nome,descricao)
+
+PARTICIPACAO(codigo_producao FK,codigo_funcao FK,cache,data_inicio,data_fim,PK (, codigo_producao, codigo_funcao)
